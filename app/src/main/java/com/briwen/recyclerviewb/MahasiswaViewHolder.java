@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class MahasiswaViewHolder extends RecyclerView.ViewHolder {
 
     public ImageView _jkImageView;
+    public TextView _tvRecordNumber;
     public TextView _jkTextView;
     public TextView _jpTextView;
     public TextView _namaTextView;
@@ -17,6 +18,7 @@ public class MahasiswaViewHolder extends RecyclerView.ViewHolder {
     public MahasiswaViewHolder(@NonNull View itemView) {
         super(itemView);
 
+        _tvRecordNumber = itemView.findViewById(R.id.tvRecordNumber);
         _jkImageView = (ImageView) itemView.findViewById(R.id.jkImageView);
         _jkTextView = (TextView) itemView.findViewById(R.id.jkTextView);
         _jpTextView = (TextView) itemView.findViewById(R.id.jpTextView);

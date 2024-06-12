@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddMahasiswaActivity">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -18,6 +19,7 @@
             android:text="Mahasiswa Baru"
             android:textSize="25sp"
             android:textStyle="bold"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,6 +28,7 @@
             android:id="@+id/nimEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,23 +37,28 @@
             android:id="@+id/namaEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jenis Kelamin"/>
+
         <Spinner
             android:id="@+id/jenisKelaminSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/jenisKelaminArray"/>
+            android:layout_height="54dp"
+            android:entries="@array/jenisKelaminArray" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tempat Lahir"/>
+            android:layout_height="30dp"
+            android:text="Tempat Lahir" />
+
         <EditText
             android:id="@+id/tempatLahirEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,37 +77,43 @@
             android:id="@+id/alamatEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jurusan / Prodi"/>
+            android:layout_height="31dp"
+            android:text="Jurusan / Prodi" />
+
         <Spinner
             android:id="@+id/jpSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/jpArray"/>
+            android:layout_height="44dp"
+            android:entries="@array/jpArray" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Status pernikahan"/>
+            android:layout_height="29dp"
+            android:text="Status Pernikahan" />
+
         <Spinner
             android:id="@+id/statusNikahSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/statusNikahArray"/>
+            android:layout_height="43dp"
+            android:entries="@array/statusNikahArray" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tahun Masuk"/>
+            android:layout_height="41dp"
+            android:text="Tahun Masuk" />
         <EditText
+            android:id="@+id/tahunMasukEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:id="@+id/tahunMasukEditText"/>
+            android:inputType="number"/>
+
         <Button
+            android:id="@+id/saveButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Simpan"
-            android:id="@+id/saveButton"/>
+            android:text="Simpan"/>
     </LinearLayout>
 </ScrollView>
